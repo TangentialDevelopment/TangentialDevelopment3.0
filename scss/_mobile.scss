@@ -5,14 +5,14 @@
   }
 }
 
-// Desktops/Laptops
+// Desktops & Laptops
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-// Tablets/Small Laptops
+// Tablets & Small Laptops
 @include mediaMd {
   main {
     align-items: center;
@@ -46,7 +46,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url('../img/waterfall2Modified.png');
+      background: url('../img/portrait_small.jpg');
       width: 150px;
       height: 150px;
     }
