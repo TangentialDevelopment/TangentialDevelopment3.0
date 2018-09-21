@@ -13,6 +13,11 @@ body {
   margin: 0;
   font-family: sans-serif;
   line-height: 1.5;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 //headings
@@ -35,7 +40,7 @@ a {
   color: #fff;
   text-decoration: none;
 }
-// 
+//
 // .showcase {
 //   background: rgba(0, 0, 0, 0.9);
 //   margin: 0;
@@ -53,9 +58,9 @@ a {
   color: $secondary-color;
 }
 
-main {
+.block {
   padding: 4rem;
-  // height: 100%;
+  height: 100%;
   min-height: calc(100vh - 60px);
 
   .icons {
@@ -71,11 +76,15 @@ main {
     }
   }
 
-  &#home {
+  &.home {
     overflow: hidden;
     h1 {
       margin-top: 20vh;
     }
+  }
+
+  &.about {
+    overflow: hidden;
   }
 }
 
