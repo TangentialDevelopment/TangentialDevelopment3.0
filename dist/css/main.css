@@ -197,6 +197,47 @@ a {
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
+.line {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: relative;
+  font-variant: small-caps;
+  padding: 0;
+  margin: 0; }
+  .line p {
+    margin: 0; }
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin-right: 5px;
+  margin: 0; }
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.html {
+  background-image: url("../img/icons/rawHTML.png"); }
+
+.css {
+  background-image: url("../img/icons/rawCSS.png"); }
+
+.js {
+  background-image: url("../img/icons/rawJS.png"); }
+
+.bs {
+  background-image: url("../img/icons/bootstrap.png"); }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -271,7 +312,7 @@ a {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/icons/js.png");
       width: 150px;
       height: 150px; }
   .about-info {
