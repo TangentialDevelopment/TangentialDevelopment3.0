@@ -3,5 +3,6 @@
 descriptions: test of most of the technologies I know compiled into one site.
 
 - 09-18 3.0 release: basics implemented
+- 10-1 3.1 release: icon update
 
 current working goals:
