@@ -46,7 +46,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url('../img/icons/js.png');
+      background: url('../img/waterfall2Modified.png');
       width: 150px;
       height: 150px;
     }
@@ -84,5 +84,9 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .iconRow {
+    display: none;
   }
 }
