@@ -1,0 +1,165 @@
+body {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.logo {
+  border-radius: 50%;
+
+  -webkit-border-radius: 50%;
+}
+
+.showcase::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1534412063822-8ef4e9e52b26?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86c274341f6a5dae95f2f1441226b9f5&auto=format&fit=crop&w=671&q=80");
+  background-color: rgba(20, 20, 20, 0.5);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  transition: all 1000ms;
+
+  -webkit-filer: blur(10px);
+}
+
+.showcase:hover::after {
+  filter: blur(0px);
+  -webkit-filer: blur(10px);
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  margin-top: 105px;
+  margin-left: -145px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  transition: all 1000px;
+}
+
+.content .logo {
+  height: 120px;
+  width: 180px;
+}
+
+.content .title {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.content .text {
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+
+footer {
+  padding: 2.2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.boxes div {
+  font-size: 2rem;
+  border: 3px #fff solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.text-secondary {
+  color: #eece1a;
+}
+
+/* small screens */
+@media(max-width: 560px) {
+  .showcase::after {
+    height: 50vh;
+  }
+
+  .content {
+    top: 5%;
+    margin-top: 5px;
+  }
+
+  .content .logo {
+    height: 110px;
+    width: 140px;
+  }
+
+  .content .text {
+    display: none;
+  }
+
+  .services div {
+    border-bottom: #333 dashed 1px;
+    padding: 1.2rem, 1rem;
+  }
+
+  .grid-3,
+  .grid-2{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* landscape view */
+@media(max-height: 500px) {
+  .content .title, .content .text {
+    display: none;
+  }
+
+  .content {
+    top: 5%;
+  }
+}
