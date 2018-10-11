@@ -66,6 +66,14 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .content .title, .content .text {
+    display: none;
+  }
+
+  .content {
+    top: 5%;
+  }
 }
 
 // Smartphones
@@ -88,5 +96,33 @@
 
   .iconRow {
     display: none;
+  }
+
+  .showcase::after {
+    height: 50vh;
+  }
+
+  .content {
+    top: 5%;
+    margin-top: 5px;
+  }
+
+  .content .logo {
+    height: 110px;
+    width: 140px;
+  }
+
+  .content .text {
+    display: none;
+  }
+
+  .services div {
+    border-bottom: #333 dashed 1px;
+    padding: 1.2rem, 1rem;
+  }
+
+  .grid-3,
+  .grid-2{
+    grid-template-columns: 1fr;
   }
 }
