@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Niramit');
+
 body {
   background: rgba(0, 0, 0, 0.9);
   margin: 0;
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Niramit', sans-serif;
 }
 
 .logo {
@@ -13,10 +15,10 @@ body {
 
 .showcase::after {
   content: "";
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background-image: url("https://images.unsplash.com/photo-1534412063822-8ef4e9e52b26?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86c274341f6a5dae95f2f1441226b9f5&auto=format&fit=crop&w=671&q=80");
-  background-color: rgba(20, 20, 20, 0.5);
+  background-color: rgba(20, 20, 20, 0.7);
   background-blend-mode: darken;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,6 +46,7 @@ body {
   height: 350px;
   text-align: center;
   transition: all 1000px;
+  text-shadow: 0px 2px 4px rgba(17, 49, 229, 0.3);
 }
 
 .content .logo {
@@ -54,6 +57,7 @@ body {
 .content .title {
   font-size: 2.2rem;
   margin-top: 1rem;
+  line-height: 1.125;
 }
 
 .content .text {
@@ -120,6 +124,7 @@ footer p {
 
 .text-secondary {
   color: #eece1a;
+  font-weight: 600;
 }
 
 /* small screens */
