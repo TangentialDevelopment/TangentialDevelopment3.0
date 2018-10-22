@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "icons";
 @import url('https://fonts.googleapis.com/css?family=Niramit');
 
 html, body {
@@ -208,27 +209,11 @@ a {
         margin: 0;
 
         .icon {
-          width: 20px;
-          height: 20px;
+          width: 25px;
+          height: 25px;
           background-size: cover;
           background-repeat: no-repeat;
-
-          .html {
-            background-image: url("../img/icons/rawHTML.png");
-          }
-
-          .css {
-            background-image: url("../img/icons/rawCSS.png");
-          }
-
-          .js {
-            background-image: url("../img/icons/rawJS.png");
-          }
-
-          .bs {
-            background-image: url("../img/icons/bootstrap.png");
-          }
-
+          margin-right: 5px;
         }
       }
     }

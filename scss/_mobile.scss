@@ -10,10 +10,6 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .iconRow {
-    display: none;
-  }
 }
 
 // Tablets & Small Laptops
@@ -71,7 +67,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .iconRow {
+  .icon {
     display: none;
   }
 
@@ -102,7 +98,7 @@
     grid-template-columns: 1fr;
   }
 
-  .iconRow {
+  .icon {
     display: none;
   }
 
