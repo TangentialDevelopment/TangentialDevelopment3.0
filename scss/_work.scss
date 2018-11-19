@@ -140,7 +140,7 @@ a[data-tool-tip]:hover::after {
   color: white;
   opacity: 0;
   word-wrap: break-word;
-  margin-top: -200px;
+  margin: -200px auto;
   padding: 20px;
   @include easeOut;
 }
